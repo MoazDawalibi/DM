@@ -1,0 +1,83 @@
+.OrderTab_container{
+
+    .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list,.ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
+        background: transparent;
+        border-radius:0px;
+    }
+    .order_tab_title{
+        font-size: 24px;
+        margin-bottom: 0;
+        font-weight: normal;
+        transition: ease-in-out .2s;
+        span{
+            transition: ease-out .2s;
+            font-size: 18px;
+            padding: 3.5px 6px 3.5px 6px;
+            border-radius: 50%
+        }
+        &:hover{
+            color: var(--primary);
+            span{
+                color: var(--white);
+                background: var(--primary);
+            }
+        }
+    }
+}
+
+
+.ant-table-wrapper .ant-table-tbody >tr >th, .ant-table-wrapper .ant-table-tbody >tr >td,.ant-table-wrapper .ant-table-thead >tr>th, .ant-table-wrapper .ant-table-thead >tr>td{
+    background: #F6F6F6;
+}
+
+.EmptyOrder{
+    @include Flex; flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    img{
+        width: 35%;
+    }
+    p{
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    .order_tab_title{
+        font-size: 18px !important;
+        span{
+            font-size: 14px !important;
+        }
+      }
+
+      
+    .EmptyOrder{
+        img{
+            width: 65% !important;
+        }
+        p{
+            font-size: 18px !important;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .order_tab_title{
+        font-size: 14px !important;
+        span{
+            font-size: 10px !important;
+        }
+      }
+
+      
+    .EmptyOrder{
+        img{
+            width: 65% !important;
+        }
+        p{
+            font-size: 14px !important;
+        }
+    }
+}

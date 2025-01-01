@@ -1,0 +1,28 @@
+// .ant-pagination .ant-pagination-item-active {
+//   background: var(--secondary);
+//   border-color: var(--secondary);
+// }
+
+// .ant-pagination .ant-pagination-item {
+//   border-color: var(--secondary);
+// }
+// .pagination ul a {
+//   border-color: transparent !important;
+// }
+
+.ant-drawer-right>.ant-drawer-content-wrapper{
+    box-shadow: none !important;
+}.ant-collapse>.ant-collapse-item:last-child,.ant-collapse>.ant-collapse-item:last-child>.ant-collapse-header{
+    border-radius: 0;
+}
+
+.setting_container .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list, .setting_container .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list{
+  overflow-x: auto  ;
+  @include Scrollbar;
+}
+
+
+.ant-tabs-tab.ant-tabs-tab-active.ant-tabs-tab-disabled{
+       
+
+}

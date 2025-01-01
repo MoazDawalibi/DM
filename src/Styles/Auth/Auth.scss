@@ -1,0 +1,153 @@
+.Auth{
+  .MenuButton{
+      outline: none;
+      border: none;
+      border-radius: var(--border-radius);
+      width: fit-content;
+      white-space: nowrap;
+      background: var(--white);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding-inline: 10px;
+      font-size: 1vw;
+      &:hover{
+          background: var(--DarkPrimary) !important;
+      } 
+   }
+}
+.ant-drawer .ant-drawer-content {
+    display: flex; flex-direction: column;
+    border-radius: 5px 0 0 5px; 
+}
+.auth_first_section{
+  width: 100%;
+  display: flex;justify-content: end;align-items: end;
+  span{
+      text-align: end;
+      cursor: pointer;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      opacity: .7;
+  }
+}
+
+.auth_header{
+  width: 86%;
+  @include Flex;
+  margin-inline: auto;
+  .auth_tab{
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+      color: #717171;
+      }
+      .ant-tabs .ant-tabs-tab{
+      cursor: pointer;
+      width: 100% !important;
+      @include Flex ;
+      font-size: 22px;
+      color: #717171;
+  }
+  .ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list,.ant-tabs >.ant-tabs-nav .ant-tabs-nav-list{
+      width: 100%;
+      @include Flex;
+  }
+}
+
+.ant-tabs .ant-tabs-ink-bar{
+  background: var(--primary);
+}
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn ,.ant-tabs .ant-tabs-tab:hover{
+  color: var(--primary);
+}
+.ant-tabs-nav-operations{
+  display: none !important; 
+}
+.LoginForm ,.RegisterForm, .VerifyForm{
+  width: 92%;
+  @include Flex;flex-direction: column;
+  margin-inline: auto;
+  h5{
+      color: var(--text);
+      font-size: 35px;
+      margin-block: 20px;
+      text-transform: capitalize;
+  }
+  .login_form_container{
+      width: 100%;
+      .login_button{
+          padding: 12px 0;
+          background: var(--primary);
+          font-size: 20px;
+          border: none;
+          border-radius: 10px;
+      }
+      .login_input{
+          width: 100%;
+          display: flex;
+          padding: 12px 15px;
+          border-radius: 10px;
+          &:hover{
+              border: 1px solid var(--primary);
+          }
+      }
+      .ant-input-prefix{
+          color: #B4B4B4;
+          font-size: 25px;
+      }
+  }
+}
+
+
+@media screen and (max-width:650px) {
+  .AuthAithDrawer{
+    .ant-tabs .ant-tabs-tab-btn{
+      font-size: 14px !important;
+    } 
+  }
+
+  .LoginForm ,.RegisterForm{
+      width: 100%;
+      h5{
+          font-size: 25px;
+          margin-block: 20px;
+      }
+      .login_form_container{
+          width: 100%;
+          .login_button{
+              font-size: 14px;
+          }
+      }
+  }
+
+  .Auth{
+    .MenuButton{
+        outline: none;
+        border: none;
+        border-radius: var(--border-radius);
+        width: fit-content;
+        white-space: nowrap;
+        background: var(--secondary);
+        color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        padding-inline: 5px;
+        padding-block: 10px;
+        font-size: 11px;
+        &:hover{
+            background: var(--DarkPrimary) !important;
+        }
+        
+    }
+
+  }
+
+
+}
+

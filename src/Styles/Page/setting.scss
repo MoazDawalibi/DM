@@ -1,0 +1,552 @@
+.setting_container {
+  width: 90%;
+  min-height: 100vh;
+//   padding-top: 4%;
+  margin-inline: auto;
+  .setting_header{
+      margin-top: 20px;
+      display: flex;justify-content: start;align-items: center;
+      color: var(--whiteGray);
+      font-size: 20px;
+      letter-spacing: .7px;
+      cursor: pointer;
+      span{
+          color: var(--primary);
+          border-bottom: 2px solid var(--primary);
+          padding-bottom: 3px;
+          margin-left: 10px;
+      }
+  }
+
+  .setting_body{
+      width: 100%;
+      display: flex;
+      margin-block: 30px;
+      .setting_body_tabs{
+          width: 100%;
+          .ant-tabs .ant-tabs-tab{
+              justify-content: start;align-items: start;
+              font-size: 20px;
+              width: 100% !important;
+              color: #717171;
+              
+          }
+
+          .contact_tab{
+                  justify-content: space-around !important;
+                  margin-bottom: 50px;
+                  .left{
+                      width: 36%;height: 400px !important;
+                      .social_info{
+                          .Single_info{
+                              span{
+                                  svg{
+                                      font-size: 2vw;
+                                  }
+                              }
+                              p{
+                                  width: 70%;
+                                  font-size: 1.3vw;
+                              }
+                          }
+                      }
+                  }
+              
+                  .right{
+                      width: 48%;
+                          >div {
+                              h1 {
+                                  font-size: 4.5vw;
+                                  color: var(--fifthly) !important;
+                              }
+                      
+                              p {
+                                  font-size: 1.4vw;
+                              }
+                      
+                              width: 50%;
+                          }
+              }
+          }
+
+          .PersonalDataTabs{
+              width: 100%;
+              .personl_data_form{
+                  width: 100%;
+                  display: flex;flex-direction: column;
+                  >div{
+                      display: flex;
+                      flex-wrap: wrap !important;
+                  }
+                  .personl_data_form_button{
+                      width: 20% !important;
+                      padding: 10px 0 !important;
+                      background: var(--primary);
+                      color: var(--white);
+                      font-size: 20px;
+                      border: none;
+                      &:hover{
+                          background: var(--DarkPrimary);
+                      }
+                  }
+              }
+          }
+
+          .ChangePasswordTab{
+              .feild_container{
+                  width: 50%;
+                  margin: 0;
+                  .personl_data_feild{
+                      width:100%;
+                  }
+              }
+              .personl_data_form_button{
+                  width: 16% !important;
+                  padding: 5px 0 !important;
+                  background: var(--primary);
+                  color: var(--white);
+                  font-size: 16px;
+                  border: none;
+                  &:hover{
+                      background: var(--DarkPrimary);
+                  }
+              }
+          }
+
+          .WishlistTab_container{
+              display: flex; flex-direction: column;
+              width: 100% ;
+              .ProductCards{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+               
+                  
+              }
+          }
+      }
+  }
+  .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list,.ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
+      background: #F6F6F6;
+      border-radius: 5px;
+  }
+  
+}
+
+.ant-tabs-nav{
+    margin-inline: 10px !important;
+}
+
+
+.ant-tabs-left >.ant-tabs-nav .ant-tabs-tab, .ant-tabs-right >.ant-tabs-nav .ant-tabs-tab, .ant-tabs-left >div>.ant-tabs-nav .ant-tabs-tab, .ant-tabs-right >div>.ant-tabs-nav .ant-tabs-tab{
+  text-align: start;
+  padding: 8px 40px !important;
+}
+
+// utils
+.feild_container{
+  width: 38%;
+  margin-right: 20px;
+  .personl_data_feild{
+      background: #f0f0f0;
+      border: none !important;
+      width: 100%;
+      display: flex;
+      padding: 17px 15px;
+      &:hover ,&:focus{
+          border: 1px solid var(--primary) !important;
+      }
+  }
+}
+.ant-input-prefix{
+  color: #B4B4B4;
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+.SettingTabHeader{
+  p{
+      color: var(--whiteGray);
+      font-size: 18px;
+      margin-bottom: 30px;
+  }
+}
+
+
+// settings drawer 
+.setting_drawer_first_section{
+    width: 100%;
+    display: flex;justify-content: end;align-items: center;
+    margin-bottom: 10px;
+    p{
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 17px;
+    }
+    span{
+        text-align: end;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        opacity: .7;
+        svg{
+            margin-inline: 5px;
+        }
+    }
+    }
+    .ant-drawer .ant-drawer-body{
+        padding: 15px;
+        padding-bottom: 0px !important;
+        }
+        .setting_drawer_body{
+            .setting_drawer_tab{
+                width: 100%;
+                display: flex;
+                margin-inline: auto;
+                margin-bottom: 20px;
+                svg{
+                    font-size: 24px;
+                    margin-inline: 14px;
+                    }
+                    div{
+                        line-height: 1px !important;
+                        }
+                        h4{
+                            margin-bottom: 7px ;
+                            font-weight: normal;
+                            font-size: 13px;
+                            text-transform: capitalize;
+                            }
+                            h4:nth-child(1){
+                                color: var(--primary);
+                                font-size: 17px;
+                                }
+                                }
+                                .without_primary{
+                                    opacity: .8;
+                                    display: flex;align-items: center;
+                                    h4{
+            color: var(--text) !important;
+        }
+        svg{
+            font-size: 24px;
+        }
+        }
+}
+
+.ar{
+    .setting_drawer_first_section{
+        span{
+            display: flex;flex-direction: row-reverse;align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .setting_container {
+        width: 94%;
+        
+        .setting_body{
+            width: 100%;
+            display: flex;
+            margin-block: 30px;
+            .setting_body_tabs{
+                .ant-tabs .ant-tabs-tab{
+                    font-size: 20px !important;
+                }
+      
+                .contact_tab{
+                        .left{
+                            width: 42%;height: 400px !important;
+                            .social_info{
+                                .Single_info{
+                                    span{
+                                        svg{
+                                            font-size: 2.5vw;
+                                        }
+                                    }
+                                    p{
+                                        font-size: 1.6vw;
+                                    }
+                                }
+                            }
+                        }
+                    
+                        .right{
+                            width: 48%;
+                        }
+                }
+      
+                .ChangePasswordTab{
+                    .feild_container{
+                        width: 60%;
+                    }
+                }
+      
+                .WishlistTab_container{
+                    .ProductCards{
+                        .ProductCard{
+                            width: 29%;
+                            min-width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+        
+      }
+      
+      
+      // utils
+      .feild_container{
+        width: 46%;
+      }
+
+      .ant-input-prefix{
+        font-size: 20px;
+      }
+      
+      .SettingTabHeader{
+        p{
+            margin-bottom: 20px;
+        }
+      }
+      .form-control{
+        padding:16px  20px !important ;
+      }
+      
+      
+}
+
+
+
+@media screen and (max-width:800px) {
+    .setting_container {
+        width: 94% !important;
+        
+      .setting_header{
+        font-size: 16px;
+        }
+        .setting_body{
+            width: 100%;
+            display: flex;
+            margin-block: 30px;
+      
+            .setting_body_tabs{
+                width: 100%;
+                .ant-tabs .ant-tabs-tab{
+                    justify-content: start;align-items: start;
+                    font-size: 24px;
+                    width: 100% !important;
+                    color: #717171;
+                }
+      
+                .contact_tab{
+                        justify-content: space-between !important;
+                        margin-bottom: 20px;
+                        .left{
+                            width: 48%;height: 370px !important;
+                            .social_info{
+                                .Single_info{
+                                    span{
+                                        svg{
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    p{
+                                        width: 70%;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            width: 48%;
+                            .form-control{
+                                padding:12px  16px !important ; 
+                                }
+                            }
+                        .button_container{
+                            .button {
+                                padding: 15px;
+                                width: 50% !important;
+                                font-size: 14px !important;
+                                border-radius: 14px;
+                            }
+                    }
+                }
+      
+                .PersonalDataTabs{
+                    width: 100%;
+                    .personl_data_form{
+                        width: 100%;
+                        display: flex;flex-direction: column;
+                        margin-inline: auto;
+                        >div{
+                            display: flex;
+                            flex-wrap: wrap !important;
+                        }
+                        .personl_data_form_button{
+                            width: 40% !important;
+                            padding: 12px 0 !important;
+                            background: var(--primary);
+                            color: var(--white);
+                            font-size: 12px;
+                            border: none;
+                            &:hover{
+                                background: var(--DarkPrimary);
+                            }
+                        }
+                    }
+                }
+      
+                .ChangePasswordTab{
+                    .feild_container{
+                        width: 80%;
+                        .personl_data_feild{
+                            width:100%;
+                        }
+                    }
+                    .personl_data_form_button{
+                        width: 30% !important;
+                        padding: 12px 0 !important;
+                        background: var(--primary);
+                        color: var(--white);
+                        font-size: 12px;
+                        border: none;
+                        &:hover{
+                            background: var(--DarkPrimary);
+                        }
+                    }
+                }
+      
+                .WishlistTab_container{
+                    .ProductCards{  
+                        .ProductCard{
+                            width: 30%;
+                            min-width: 220px;
+                        }
+                    }
+                }
+            }
+        }
+        .ant-tabs >.ant-tabs-nav .ant-tabs-nav-list,.ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-list{
+            background: #F6F6F6;
+            border-radius: 5px;
+        }
+        
+      }
+      
+      
+      
+      
+      .ant-tabs-left >.ant-tabs-nav .ant-tabs-tab, .ant-tabs-right >.ant-tabs-nav .ant-tabs-tab, .ant-tabs-left >div>.ant-tabs-nav .ant-tabs-tab, .ant-tabs-right >div>.ant-tabs-nav .ant-tabs-tab{
+        text-align: start;
+        padding: 8px 40px !important;
+      }
+      
+      // utils
+      .feild_container{
+        width: 46%;
+        margin-right: 6px;
+        .personl_data_feild{
+            font-size: 13px;
+        }
+      }
+      .ant-input-prefix{
+        font-size: 20px;
+        padding-right: 5px;
+      }
+      
+      .SettingTabHeader{
+        p{
+            color: var(--whiteGray);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+      }
+      
+      .ant-table-wrapper .ant-table-cell, .ant-table-wrapper .ant-table-thead>tr>th, .ant-table-wrapper .ant-table-tbody>tr>th, .ant-table-wrapper .ant-table-tbody>tr>td, .ant-table-wrapper tfoot>tr>th, .ant-table-wrapper tfoot>tr>td {
+        font-size: 12px;
+      }
+}
+
+
+@media screen and (max-width:600px) {
+    .setting_container{
+        .contact_tab{
+            display: flex; flex-direction: column;justify-content: center;align-items: center;
+            .left{
+                width: 80% !important;
+                margin-inline: auto ;
+                margin-bottom: 30px;
+                .social_info{
+                    .Single_info{
+                        span{
+                            svg{
+                                // font-size: 30px !important;
+                            }
+                        }
+                        p{
+                            width: 70%;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 80% !important;
+                .form-control{
+                    padding:12px  16px !important ; 
+                    }
+                }
+            .button_container{
+                .button {
+                    padding: 15px;
+                    width: 50% !important;
+                    font-size: 14px !important;
+                    border-radius: 14px;
+                }
+        }
+      }
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    .ant-table-wrapper .ant-table-cell, .ant-table-wrapper .ant-table-thead>tr>th, .ant-table-wrapper .ant-table-tbody>tr>th, .ant-table-wrapper .ant-table-tbody>tr>td, .ant-table-wrapper tfoot>tr>th, .ant-table-wrapper tfoot>tr>td {
+        font-size: 14px;
+      }
+      .ant-table-cell{
+        .ant-tag{
+            margin-inline: 0;
+            font-size: 7px;
+        }
+      }
+
+      .WishlistTab_container{
+        .ProductCards{           
+            justify-content: center !important; 
+            .ProductCard{
+                min-width: 280px !important;
+            }
+        }
+    }
+
+}
+
+.ant-tabs-nav-list{
+padding-block: 10px;
+}
+// .setting_container .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list, .setting_container .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list{
+    // }
+.ant-tabs-nav-list{
+    // transform: translate(-.674px, 0px) !important;
+}
+.ar{
+    .ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-wrap{
+        direction: ltr ;
+    }
+}

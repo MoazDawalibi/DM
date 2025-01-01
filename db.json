@@ -1,0 +1,110 @@
+{
+  "example": [
+    {
+      "id": 1,
+      "name": "ibrahim",
+      "email": "ibrahim@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "gregr",
+      "email": "ibrahimgmail.com"
+    },
+    {
+      "id": 3,
+      "name": "mhmad",
+      "email": "mhmad@gmial.com"
+    },
+    {
+      "id": 4,
+      "name": "soso",
+      "email": "soso@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "few",
+      "email": "jfpwrej"
+    },
+    {
+      "id": 6,
+      "name": "sos",
+      "email": "fdwf"
+    },
+    {
+      "id": 7,
+      "name": "sos",
+      "email": "fdwf"
+    },
+    {
+      "id": 8,
+      "name": "sos",
+      "email": "fdwf"
+    }
+  ],
+  "test2": [
+    {
+      "id": 1,
+      "email": "admin@adamin.com"
+    },
+    {
+      "id": 1,
+      "email": "admin@adamin.com"
+    },
+    {
+      "id": 1,
+      "email": "admin@adamin.com"
+    },
+    {
+      "id": 1,
+      "email": "admin@adamin.com"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@adamin.com",
+      "password": "password",
+      "token": "token"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "image": "/public/Activities/data-display/Rectangle 103.png",
+      "title": "nunc id cursus metus aliquam eleifend mi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit.",
+      "location": "Consectetur adipiscing elit, sed do",
+      "time": "25 JAN 2024 - 30 JAN 2024"
+    },
+    {
+      "id": 2,
+      "image": "/public/Activities/data-display/Rectangle 103.png",
+      "title": "nunc id cursus metus aliquam eleifend mi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit.",
+      "location": "Consectetur adipiscing elit, sed do",
+      "time": "25 JAN 2024 - 30 JAN 2024"
+    },
+    {
+      "id": 3,
+      "image": "/public/Activities/data-display/Rectangle 103.png",
+      "title": "nunc id cursus metus aliquam eleifend mi",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit.",
+      "location": "Consectetur adipiscing elit, sed do",
+      "time": "25 JAN 2024 - 30 JAN 2024"
+    }
+  ],
+  "activities/popular": [
+    {
+      "first": "25 JAN 2024",
+      "second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+    },
+    {
+      "first": "25 JAN 2024",
+      "second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+    },
+    {
+      "first": "25 JAN 2024",
+      "second": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
+    }
+  ]
+}

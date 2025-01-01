@@ -1,0 +1,47 @@
+.OnSaleCard {
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px 0px 10px;
+  min-width: 200px;
+  border-radius: var(--border-radius);
+  position: relative;
+  height: fit-content;
+
+  h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 130px;
+    margin-inline: auto;
+    margin-bottom: 10px;
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  > span {
+    position: absolute;
+    background-color: #fddbc9;
+    color: #f45e0c;
+    left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 13px;
+    padding: 4px;
+  }
+}

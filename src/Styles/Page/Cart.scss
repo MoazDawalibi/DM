@@ -1,0 +1,124 @@
+.cart_container{
+  .cart_container{
+     margin-top: auto;
+      button{
+          background-color: var(--secondary) !important;
+          color: var(--bg) !important;
+          font-weight: bold !important;
+      }
+  }
+
+  .ant-drawer-body{
+      height: 100% !important;
+  }
+  
+  .Cart_Icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      @include Flex;
+  }
+  .Badge_Button{
+      margin-inline: 10px;
+  }
+  
+  }
+  
+.cart_first_section{
+  width: 100%;
+  display: flex;justify-content: space-between;
+  span{
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      &:nth-child(2){
+          text-align: end;
+          cursor: pointer;
+      }
+  }
+  
+}
+
+.ant-badge .ant-badge-count{
+    min-width: 15px;
+    height: 15px;
+    font-size: 10px;
+    @include Flex;
+}
+.ViewCart_Button{
+    width: 100%;
+    display: flex;justify-content: space-between;
+    margin-top: 20px;
+  p{
+      text-align: center;
+      font-size: 1\6px;
+      span{
+          font-weight: 500;
+      }
+  }
+    .cart_checkout_button{
+        width: 80% !important;
+        padding: 20px 10px;
+        background: var(--primary);
+        font-size: 18px ;
+        font-weight: 500;
+        text-transform:capitalize ;
+        &:hover{
+            background: var(--DarkPrimary) !important;
+        }
+  }    
+}
+
+.Drawer_Body{
+    // height: 70vh;
+    display: flex; flex-direction: column; justify-content: space-between;align-items: center;
+}
+.ar{
+    .cart_first_section{
+        display: flex;justify-content: space-between;
+        span{
+            &:nth-child(2){
+                display: flex; flex-direction: row-reverse;align-items: center;
+                text-align: end;
+                cursor: pointer;
+                svg{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:650px) {
+  .cart_first_section{
+      span{
+          font-size: 13px;
+      }
+  }
+  .ViewCart_Button{
+      p{
+          font-size: 12px;
+      }
+    .cart_checkout_button{
+        font-size: 15px;
+        padding: 20px 10px;
+    }
+  }
+}
+
+.EmptyCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10% !important; 
+    // gap: 20px;
+    img{
+        width: 40%;
+    }
+    p{
+        font-size: max(1.5vw,15px);
+    }
+          .cart_checkout_button{
+              font-size: 15px;
+          }
+  }

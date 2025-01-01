@@ -1,0 +1,22 @@
+.SearchComponent {
+  > p {
+    margin: 0;
+  }
+  > input {
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    border-radius: 5px;
+    border: 1px solid;
+    max-width: 250px;
+    padding-left: 5px;
+    font-size: small;
+    color: #757575;
+  }
+  > input::placeholder {
+    color: #757575;
+    font-size: 9px;
+    padding-left: 3px;
+  }
+}

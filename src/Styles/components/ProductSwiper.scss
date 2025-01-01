@@ -1,0 +1,22 @@
+.productSwiper{
+    display: flex;
+     justify-content: center;align-items: center;
+    width: 96%;
+    margin-inline: auto;
+    padding-top: 25px;
+    .arrow_svg_right,.arrow_svg_left{
+        color: var(--primary);
+        font-size: 50px;
+    }
+    
+}
+.ar{
+    .productSwiper{
+        flex-direction: row-reverse !important;
+    }
+}
+
+.swiper-slide{
+min-width: 220px;
+// margin-inline: auto;
+}

@@ -1,0 +1,146 @@
+.CardItem {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 7px;
+  min-width: 400px;
+  .ant-card-body {
+    display: flex;justify-content: space-between;align-items: center;
+    padding: 10px 5px;
+    width: 100%;
+    box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+  }
+  .Card_Img {
+    width: 20%;
+    img {
+      width: 80%;
+    }
+  }
+  .Card_Info {
+    width: 70%;
+    h5 {
+      font-size: 14px;
+      text-wrap: nowrap;
+    }
+    h6 {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      color: var(--whiteGray);
+      svg {
+        margin-right: 5px;
+        color: var(--primary);
+        font-size: 15px;
+      }
+    }
+    .card_price {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        font-size: 14px;
+        color: var(--whiteGray);
+        margin-bottom: 0 !important;
+      }
+      .count_section {
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .trashIcon {
+          color: #c91433;
+        }
+        .card_counter {
+          display: flex;
+          justify-content: space-around;
+          width: 80%;
+          svg {
+            color: var(--whiteGray);
+          }
+        }
+      }
+    }
+  }
+  .Card_Delete {
+    margin-left: 30px;
+    @include Flex;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .CardItem {
+    .ant-card-body {
+      // @include Flex;
+      padding: 10px 0px;
+      width: 100%;
+      box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 7px;
+    }
+    .Card_Img {
+      width: 20%;
+      img {
+        width: 80%;
+      }
+    }
+    .Card_Info {
+      width: 70%;
+      h5 {
+        font-size: 14px;
+        text-wrap: nowrap;
+      }
+      h6 {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        color: var(--whiteGray);
+        svg {
+          margin-right: 5px;
+          color: var(--primary);
+          font-size: 15px;
+        }
+      }
+      .card_price {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-size: 14px;
+          color: var(--whiteGray);
+          margin-bottom: 0 !important;
+        }
+        .count_section {
+          width: 40%;
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          .trashIcon {
+            color: #c91433;
+          }
+          .card_counter {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            svg {
+              color: var(--whiteGray);
+            }
+          }
+        }
+      }
+    }
+    .Card_Delete {
+      margin-left: 30px;
+      @include Flex;
+    }
+  }
+}
+
+
+@media screen and (max-width:450px) {
+  .CardItem{
+    min-width: 300px;
+  }
+}

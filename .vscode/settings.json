@@ -1,0 +1,20 @@
+{
+  "cSpell.words": [
+    "aldeen",
+    "antd",
+    "Datepicker",
+    "formik",
+    "Karim",
+    "queryqlent",
+    "szhsin",
+    "Viewelement",
+    "zustand"
+  ],
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "prettier.useTabs": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"]
+}

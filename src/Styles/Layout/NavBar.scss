@@ -1,0 +1,121 @@
+.Layout:has(.home_page){
+    .navbar{
+        position: absolute;
+        border: none;
+    }
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+  padding-inline: 5.5vw;
+  height: var(--navbar-height);
+  width: 100%;
+  z-index: 999;
+  border-bottom: .8px solid var(--primary);
+img{
+    width: 45px;  
+  }
+  .navbar_links{
+      display: flex;
+      gap: 3vw;
+      .navbar_link{
+          color: var(--text);
+        //   opacity: .5;
+          cursor: pointer;
+          &:hover{
+              opacity: 1;
+          }
+      }
+      .active{
+          opacity: 1;
+          color: var(--primary);
+      }
+  }
+  >span{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+  }
+  .menu{
+      display: none;
+  }
+
+  article{
+      display: flex;
+      gap: 5%;
+      align-items: center;
+      >.icon_navbar{
+          padding: 10px;
+          @include Flex;
+          border-radius: 50%;
+          width: 30px;
+          height: 40px;
+      }
+      svg{
+          color: var(--text) !important;
+          font-size: 20px !important;
+          font-weight: 100;
+
+      }
+  }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .navbar{
+     img{
+        width: 50px;
+     }
+      .navbar_links{
+          display: none;
+      }
+      article{
+        gap: 10px;
+      }
+     .menu{
+      display: inline;
+      margin-inline: 10px;
+      svg{
+          color: var(--text);
+      }
+      
+     }
+  
+  }
+    .menu_navbar_links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        .menu_navbar_link{
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .navbar{
+        article{
+            gap: 2px !important;
+            svg{
+                font-size: 16px !important;
+            }
+            .icon_navbar{
+                width: 6px;
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+
+.ant-drawer .ant-drawer-header-title {
+    width: 100%;
+    justify-content: end;align-items: end;
+}
+.ant-drawer .ant-drawer-header{
+    flex-direction: row-reverse;
+}
